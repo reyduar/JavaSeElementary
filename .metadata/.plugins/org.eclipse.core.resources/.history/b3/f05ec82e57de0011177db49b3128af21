@@ -1,0 +1,22 @@
+package ar.com.iariel.javase.reloj;
+
+import java.util.Calendar;
+
+/**
+ * 
+ * @author Ariel Duarte
+ *
+ */
+public class CurrentDateTime {
+
+	//-- Obtenemos la fecha hora actual --//
+	Calendar calendario = Calendar.getInstance();
+	int hora = calendario.get(Calendar.HOUR_OF_DAY);
+	int minuto = calendario.get(Calendar.MINUTE);
+	int mes =  calendario.get(Calendar.MONTH);
+	int dia =  calendario.get(Calendar.DAY_OF_MONTH);
+	int an =  calendario.get(Calendar.YEAR);
+	
+	//-- Mostrar saludo --//
+	
+}

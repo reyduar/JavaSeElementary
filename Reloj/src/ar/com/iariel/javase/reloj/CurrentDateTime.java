@@ -1,0 +1,94 @@
+package ar.com.iariel.javase.reloj;
+
+import java.util.Calendar;
+
+/**
+ * 
+ * @author Ariel Duarte
+ * 
+ */
+public class CurrentDateTime {
+
+	public static void main(String args[]) {
+
+		// -- Obtenemos la fecha hora actual --//
+		Calendar calendario = Calendar.getInstance();
+		int hora = calendario.get(Calendar.HOUR_OF_DAY);
+		int minuto = calendario.get(Calendar.MINUTE);
+		int mes = calendario.get(Calendar.MONTH ) + 1; // Se le suma +1 porque el
+														// primer mes es simpre
+														// 0
+		int dia = calendario.get(Calendar.DAY_OF_MONTH);
+		int an = calendario.get(Calendar.YEAR);
+
+		// -- Mostrar saludo --//
+		if (hora < 12) {
+			System.out.println("Buenos dias. \n");
+		} else if (hora < 17) {
+			System.out.println("Buenas tardes. \n");
+		} else {
+			System.out.println("Buenas noches. \n");
+		}
+
+		// -- Iniciar el mensaje horario mostrando las horas --//
+		System.out.print("Son las");
+		System.out.print(" ");
+		System.out.print((hora > 12) ? (hora - 12) : hora);// Utilizamos
+																// condiciones
+																// ternarias
+		System.out.print(" horas con ");
+
+		// -- Mostrando los minutos --//
+		if (minuto != 0) {
+			System.out.print(minuto + " ");
+			System.out.print((minuto != 1) ? "minutos" : "minutos ");
+		}
+
+		// -- Mostrar el dia --//
+		System.out.print(" del dia " + dia + " de ");
+
+		// -- Mostrar el nombre del mes --//
+		switch (mes) {
+		case 1:
+			System.out.print("Enero");
+			break;
+		case 2:
+			System.out.print("Febrero");
+			break;
+		case 3:
+			System.out.print("Marzo");
+			break;
+		case 4:
+			System.out.print("Abril");
+			break;
+		case 5:
+			System.out.print("Mayo");
+			break;
+		case 6:
+			System.out.print("Junio");
+			break;
+		case 7:
+			System.out.print("Julio");
+			break;
+		case 8:
+			System.out.print("Agosto");
+			break;
+		case 9:
+			System.out.print("Setiembre");
+			break;
+		case 10:
+			System.out.print("Octubre");
+			break;
+		case 11:
+			System.out.print("Noviembre");
+			break;
+		case 12:
+			System.out.print("Diciembre");
+			break;
+		}
+		
+		//-- Mostrar Año --//
+		System.out.print(" de " + an + ".");
+	}
+
+}
