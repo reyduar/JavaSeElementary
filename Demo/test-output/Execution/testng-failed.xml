@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Execution]">
+  <parameter name="globdriver.browser" value="FIREFOX"/>
+  <parameter name="globdriver.timeout" value="15"/>
+  <listeners>
+    <listener class-name="com.globant.app.core.reporting.ListenerScreenshot"/>
+    <listener class-name="com.globant.app.core.reporting.ListenerVideoDelete"/>
+  </listeners>
+  <test name="Smoke(failed)">
+    <classes>
+      <class name="demo.test.TourSmoke">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="BeforeSuite"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- demo.test.TourSmoke -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [Execution] -->

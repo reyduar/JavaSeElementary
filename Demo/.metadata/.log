@@ -1,0 +1,19 @@
+!SESSION 2012-08-08 17:02:42.152 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Demo
+
+!ENTRY org.eclipse.ui 4 4 2012-08-08 17:03:18.778
+!MESSAGE Invalid preference page path: XML Syntax
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-08-08 17:03:19.106
+!MESSAGE pingUsageServer failed
+!STACK 0
+java.lang.NullPointerException
+	at com.android.ide.eclipse.adt.internal.welcome.AdtStartup.getVersion(AdtStartup.java:280)
+	at com.android.ide.eclipse.adt.internal.welcome.AdtStartup.pingUsageServer(AdtStartup.java:290)
+	at com.android.ide.eclipse.adt.internal.welcome.AdtStartup.access$2(AdtStartup.java:288)
+	at com.android.ide.eclipse.adt.internal.welcome.AdtStartup$5.run(AdtStartup.java:265)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

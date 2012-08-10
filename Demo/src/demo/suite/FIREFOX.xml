@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Execution" verbose="1">
+	<parameter name="globdriver.browser" value="FIREFOX" />
+	<parameter name="globdriver.timeout" value="15" />
+	<listeners>
+		<listener class-name="com.globant.app.core.reporting.ListenerScreenshot" />
+		<listener class-name="com.globant.app.core.reporting.ListenerVideoDelete" />
+	</listeners>
+	<test name="Smoke">
+		<classes>
+			<class name="demo.test.TourSmoke" />
+			 <methods>  
+			   <include name="loginTest"> </include>
+			 </methods> 
+		</classes>
+	</test>
+</suite>
