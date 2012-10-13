@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+	<api>
+		<nombre>Postgres-connector</nombre>
+		<valor>Java</valor>
+	</api>
+	<api>
+		<nombre>JSF-IceFaces</nombre>
+		<valor>Java</valor>
+	</api>
+	<api>
+		<nombre>Dojo</nombre>
+		<valor>JS</valor>
+	</api>
+</libreria>
