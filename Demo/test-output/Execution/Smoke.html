@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Smoke</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 09 18:16:30 ART 2012</td>
+<td>Started on:</td><td>Fri Aug 31 17:32:58 ART 2012</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6078 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24937 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,114 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='demo.test.TourSmoke.loginTest()'><b>loginTest</b><br>Test class: demo.test.TourSmoke</td>
-<td></td>
-<td>6</td>
-<td>demo.test.TourSmoke@1fdff07</td></tr>
+<td title='com.roomkey.test.Regression.AboutUsTest()'><b>AboutUsTest</b><br>Test class: com.roomkey.test.Regression<br/>
+<a href="#Output-2176286" onClick='toggleBox("Output-2176286", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2176286" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2176286">
+[a href='../screenshots/AboutUsTest.png' ][img src='../screenshots/AboutUsTest.png' width='200' height='200'/][/a][/br] AboutUsTest<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;copter-autofill-1346443180821&apos;]&quot;}
+Command duration or timeout: 15.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
+Driver info: driver.version: EventFiringWebDriver
+Session ID: ae665f67-65f2-4f5a-ae63-91d9256b6353
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:458)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:226)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:311)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:218)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy10.sendKeys(Unknown Source)
+	at com.roomkey.page.RoomKeyHomePage.fillCitySearch(RoomKeyHomePage.java:37)
+	at com.roomkey.test.Regression.AboutUsTest(Regression.java:36)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;copter-autofill-1346443180821&apos;]&quot;}
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/DOCUME~1/REYNAL~1.DUA/LOCALS~1/Temp/anonymous4769980441085453666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6564)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/DOCUME~1/REYNAL~1.DUA/LOCALS~1/Temp/anonymous4769980441085453666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2176286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2176286'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;copter-autofill-1346443180821&apos;]&quot;}
+Command duration or timeout: 15.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
+Driver info: driver.version: EventFiringWebDriver
+Session ID: ae665f67-65f2-4f5a-ae63-91d9256b6353
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:458)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:226)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:311)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at $Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:180)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at $Proxy10.sendKeys(Unknown Source)
+	at com.roomkey.page.RoomKeyHomePage.fillCitySearch(RoomKeyHomePage.java:37)
+	at com.roomkey.test.Regression.AboutUsTest(Regression.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;copter-autofill-1346443180821&apos;]&quot;}
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_05&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/DOCUME~1/REYNAL~1.DUA/LOCALS~1/Temp/anonymous4769980441085453666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6564)
+	at &lt;anonymous class&gt;.&lt;anonymous method&gt;(file:///C:/DOCUME~1/REYNAL~1.DUA/LOCALS~1/Temp/anonymous4769980441085453666webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+</pre></div></td>
+<td>24</td>
+<td>com.roomkey.test.Regression@1ffdf86</td></tr>
 </table><p>
 </body>
 </html>

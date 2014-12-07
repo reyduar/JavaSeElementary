@@ -9,13 +9,13 @@
   </listeners>
   <test name="Smoke(failed)">
     <classes>
-      <class name="demo.test.TourSmoke">
+      <class name="com.roomkey.test.Regression">
         <methods>
-          <include name="afterSuite"/>
           <include name="BeforeSuite"/>
-          <include name="loginTest"/>
+          <include name="AboutUsTest"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- demo.test.TourSmoke -->
+      </class> <!-- com.roomkey.test.Regression -->
     </classes>
   </test> <!-- Smoke(failed) -->
 </suite> <!-- Failed suite [Execution] -->

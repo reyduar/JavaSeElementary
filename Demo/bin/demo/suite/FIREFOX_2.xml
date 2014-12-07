@@ -8,9 +8,9 @@
 	</listeners>
 	<test name="Smoke">
 		<classes>
-			<class name="com.roomkey.test.Regression" />
+			<class name="demo.test.TourSmoke" />
 			 <methods>  
-			   <include name="AboutUsTest"> </include>
+			   <include name="loginTest"> </include>
 			 </methods> 
 		</classes>
 	</test>

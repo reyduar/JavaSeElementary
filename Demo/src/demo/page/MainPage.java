@@ -23,5 +23,5 @@ public class MainPage extends GlobPage{
 	public WikiArticlePage clickRandomArticle() {
 		   linkRandomArticle.click();
 		   return PageFactory.initElements(GlobDriver.getInstance().getDriver(), WikiArticlePage.class);
-	    }
+	}
 }

@@ -27,8 +27,7 @@ public class TourSmoke {
 	@Test
 	public void loginTest() {
 
-		TourLoginPage loginPage = PageFactory.initElements(GlobDriver
-				.getInstance().getDriver(), TourLoginPage.class);
+		TourLoginPage loginPage = PageFactory.initElements(GlobDriver.getInstance().getDriver(), TourLoginPage.class);
 
 		loginPage.go();
 		loginPage.fillLoginInformation("juangomez@hotmail.com", "facil");
